@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto&display=swap');
+
+
+
+:root{
+  --heading-font: 'Signika Negative', sans-serif;
+  --text-font : 'Poppins', sans-serif;
+  --text-color: rgba(0, 0, 0, 0.722);
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+}
+
+.d-flex{
+  display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+}
+
+.d-flex-col{
+flex-direction: column;
+justify-content: space-around;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    /* background-image: url("../src/bgAssets/stylish.jpg");   */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100vw;
+  background-position: top;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  height: 50px;
+}
+
+/* Style the scrollbar track */
+body::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Style the scrollbar thumb */
+body::-webkit-scrollbar-thumb {
+  background: rgb(215, 215, 215);
+  border-radius: 8px;
+}
+
+@media screen and (min-width : 1100px) {
+  body{
+    background-image: none;
+    background-color: #eeeeee;
+  }
+}

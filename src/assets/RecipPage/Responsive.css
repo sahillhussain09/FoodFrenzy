@@ -1,0 +1,108 @@
+@media screen and (min-width : 1100px) {
+    .searchbar-heading h2{
+        font-size: 1.9rem;
+        color: rgb(0, 0, 0);
+    }
+
+
+    .search-bar input{
+        padding: 3px 40px; 
+        font-size: 17px;
+    }
+
+    
+    .search-bar input::placeholder{
+        color: black;
+        font-size: 17px;
+    }
+
+
+    .recip-left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .recip-left img{
+        height: 230px;
+        width: 210px;
+    }
+
+
+    .description p{
+        font-size: 17px;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.922);
+    }
+
+
+    .recip-tags span{
+        color: blue;
+        font-size: 16px;
+    }
+
+    .page-btn{
+        padding: 6px 9px;
+        border-radius: 50%;
+        font-size: 17px;
+      }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+
+    .recip-maincontainer{
+        display: flex;
+        width: 90%;
+    
+    }
+
+    .recip-left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+
+    .recip-tags{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .recip-cart-box{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .searchbar-heading h2{
+        text-align: center;
+    }
+
+  .recip-maincontainer{
+    width: 100%;
+    margin: 10px;
+  }
+
+  .recip-left img{
+    height: 120px;
+    width: 100px;
+    border-radius: 50%;
+  }
+
+  .ecip-heading h3{
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .recip-tags{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+}

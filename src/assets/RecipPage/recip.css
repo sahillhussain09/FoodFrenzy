@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;600&display=swap');
+
+.recip-container{
+    background-color: #eeeeee;
+    height: 100vh;
+    width: 100vw;
+}
+
+.all-recip{
+    /* height: 400px; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.recip-searchbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.searchbar-heading h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.7rem;
+    color: rgba(0, 0, 0, 0.886);
+}
+
+.searchbar-heading h2 span{
+    color: rgb(255, 23, 73);
+}
+
+.search-bar{
+    margin-top: 12px;
+}
+
+.search-bar input{
+    padding: 2px 20px;
+    border: 1px solid rgb(143, 143, 255);
+    border-radius: 2px;
+    background-color: transparent;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.search-bar input:focus{
+    border: 1px solid blue;
+    outline: none;
+}
+
+.search-bar input::placeholder{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.797);
+   text-align: center;
+}
+
+/* all recip styling start here */
+
+.all-top-recip{
+    background-color: #eeeeee;
+    width: 100%;
+}
+
+.recip-cart-box{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 20px;
+    min-height: 100vh;
+}
+
+.recip-maincontainer{
+    display: flex;
+    width: 47%;
+    padding: 10px;
+    margin: 30px 10px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 4px;
+    max-height: 300px;
+
+}
+
+.recip-left img{
+    height: 200px;
+    width: 190px;
+    margin-top: 8px;
+    border-radius: 3px;
+}
+
+.recip-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.recip-heading{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.recip-heading h3{
+    color: rgb(255, 44, 104);
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 0px 15px 5px 5px;
+    font-weight: 600;
+    text-align: start;
+}
+
+.description{
+    padding: 10px 0px;
+}
+
+.description p{
+    color: rgba(0, 0, 0, 0.935);
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.recip-tags{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.recip-tags span{
+    color: rgb(71, 71, 255);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.recip-tags button{
+    background-color: rgb(255, 44, 104);
+    outline: none;
+    margin-top: 5px;
+    padding: 4px 10px;
+    border: 1px solid rgb(255, 44, 104);
+    border-radius: 2px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+}
+
+.recip-tags button:hover{
+    background-color: transparent;
+    border: 1px solid rgb(255, 44, 104);
+    color:rgb(255, 0, 72) ;
+    transition: all 500ms;
+}
+ 
+/* sckeloton loading start here */
+
+.skeleton {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    background-color: #f2f2f2; /* set the background color of the skeleton */
+  }
+  
+  .skeleton::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -200px;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #ffffff; /* set the color of the animated loading bar */
+    animation: loading 1s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      left: -200px;
+    }
+    to {
+      left: 100%;
+    }
+  }
+
+
+  .recip-footer{
+    padding-top: 100px;
+    background-color: #eeeeee;
+  }
+
+  .pagination{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    background-color: #eeeeee;
+  }
+
+  .pages{
+    display: flex;
+  }
+
+  .page-btn{
+    padding: 4px 7px;
+    border-radius: 50%;
+    margin-left: 3px;
+    cursor: pointer;
+    color: blue;
+   border: 1px solid rgba(0, 0, 255, 0.861);
+   outline: none;
+  }
+
+  .page-active{
+    background-color: blue;
+    color: white;
+    transition: all 500ms;
+  }
