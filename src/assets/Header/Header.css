@@ -6,6 +6,9 @@
     align-items: center;
     visibility: visible;
 }
+.header{
+    overflow-x: hidden;
+}
 
 .logo{
     display: flex;
@@ -75,12 +78,18 @@ text-align: center;
 .user-cart{
      position: absolute;
     right: 0px;
-    /* width: 200px; */
     border-radius: 20px 0px 0px 20px;
-    transition: all 700ms;
-    /* height: 400px; */
     background-color: #eeeeee; 
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+    transition: opacity 500ms;
+    opacity: 1;
+}
+
+.userMenuHide{
+     position: absolute; 
+     opacity: 0;
+      transition: all 200ms; 
+     right: 0;
 }
 
 .top-user-cart{
@@ -133,7 +142,6 @@ text-align: center;
     font-family: var(--text-font);
     letter-spacing: -0.5px;
     font-size: 14px;
-    /* color: blue; */
     margin: 2px;
     color: rgba(0, 0, 0, 0.774);
 }
@@ -143,6 +151,7 @@ text-align: center;
     flex-direction: column;
    padding: 10px 30px;
    display: none;
+ 
 }
 
 .bottom-user-cart{
@@ -179,11 +188,6 @@ text-align: center;
     font-weight: 600;
 }
 
-.userMenuHide{
-    position: absolute;
-    right: -250px;
-    transition: all 700ms;
-}
 
 .menubar-icons{
     border: 1px solid rgba(0, 0, 0, 0.376);
@@ -226,9 +230,7 @@ text-align: center;
         display: flex;
         justify-content: center;
     }
-   
-
-    
+      
 }
 
  .scrollup-navbar{

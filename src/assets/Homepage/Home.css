@@ -884,6 +884,7 @@ cursor: pointer;
     body{
       background-image: none;
       background-color: #eeeeee;
+      background-image: none;
     }
 
     .forground-text{
@@ -946,6 +947,10 @@ cursor: pointer;
 
   @media screen and (min-width: 767px) and (max-width: 1023px) {
     
+    body{
+        background-image: none;
+    }
+
   .left-img{
     display: none;
   }
@@ -975,6 +980,11 @@ cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
+
+    body{
+        background-image: none;
+    }
+
     .forground-text{
         width: 90%;
         margin: 100px auto;

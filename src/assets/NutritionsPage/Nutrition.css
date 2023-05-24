@@ -167,6 +167,9 @@
 
 
 @media screen and (max-width: 767px) {
+    body{
+        background-image: none;
+    }
     .nutrition-heading{
        width: 100%;
        padding: 10px;
