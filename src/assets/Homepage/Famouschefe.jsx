@@ -26,26 +26,20 @@ const Famouschefe = () => {
 
   useEffect(() => {
     setLoading(true);
-    const options = {
-      method: "GET",
-      headers: {
-        "X-RapidAPI-Key": "1f9fcf25a7msh24b86bc3dd54c76p1eae2ajsna624d4085451",
-        "X-RapidAPI-Host":
-          "dawn2k-random-german-profiles-and-names-generator-v1.p.rapidapi.com",
-      },
+
+    const headers = {
+      'app-id': "646e03775ac8d2f13505334c"
     };
 
-    fetch(
-      "https:dawn2k-random-german-profiles-and-names-generator-v1.p.rapidapi.com/?format=json&gender=b&cc=all&email=gmail.com%2Cyahoo.com&pwlen=12&ip=a&phone=l%2Ct%2Co&seed=helloworld&count=20&maxage=40&minage=20&uuid=1&color=1&lic=1&images=1",
-      options
-    )
-      .then((response) => response.json())
-      .then((response) => {
-        setBrokersList(response);
-        setLoading(false);
-      })
-      .catch((err) => console.error(err));
+    const ApiData = async() => {
+       const res = await fetch("https://dummyapi.io/data/v1/user?limit=30", {headers});
+       const result = await res.json();
+       setBrokersList(result.data)
+       setLoading(false)
+    }
+    ApiData();
   }, []);
+
 
   return (
     <div id="famous-chef" className="container">
@@ -85,13 +79,13 @@ const Famouschefe = () => {
                 key={index + 1}
               >
                 <div className="head-cont" key={index + 2}>
-                  <img src={elem.image} alt="" />
+                  <img src={elem.picture} alt="" />
                   <div className="info" key={index + 3}>
                     <h4>
                       <span style={{ color: "black", marginRight: "2px" }}>
                         <BiUser />
                       </span>
-                      {elem.firstname} {elem.lastname}
+                      {elem.firstName} {elem.lastName}
                     </h4>
                     <span className="bihome" style={{ color: "tomato" }}>
                       {" "}
@@ -99,12 +93,12 @@ const Famouschefe = () => {
                         {" "}
                         <BiHome />{" "}
                       </span>{" "}
-                      {elem.location.city}
+                      world wild
                     </span>
                   </div>
                 </div>
                 <div className="dawn-cont" key={index + 4}>
-                  <h5>{elem.phone.mobile}</h5>
+                  <h5>{Math.floor(Math.random() * 10000)} {Math.floor(Math.random() * 10000)} {Math.floor(Math.random() * 10000)}</h5>
                   <a className="tw-btn" href="https://twitter.com/">
                     <IoLogoTwitter />
                   </a>
